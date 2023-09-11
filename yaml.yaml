@@ -58,9 +58,9 @@ Resources:
  PublicSubnet1:
     Type: AWS::EC2::Subnet
     Properties: 
-      MapPublicIpOnLaunch: true
       AvailabilityZone: 'us-east-1a'
       CidrBlock: !Ref PublicSubnet1CIDR
+      MapPublicIpOnLaunch: true
       Tags: 
         - Key: Name
           Value: "Pubnet 1"
@@ -69,9 +69,9 @@ Resources:
   PublicSubnet2:
     Type: AWS::EC2::Subnet
     Properties: 
-      MapPublicIpOnLaunch: true
       AvailabilityZone: 'us-east-1b'
       CidrBlock: !Ref PublicSubnet2CIDR
+      MapPublicIpOnLaunch: true
       Tags: 
         - Key: Name
           Value: "Pubnet 2"
